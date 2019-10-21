@@ -113,6 +113,12 @@ text-align: center;
 
 /* Main */
 
+.background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 figure {
 background-color: #2B201B;
 text-align: center;
@@ -126,12 +132,10 @@ opacity:0.75;
 
 figcaption {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
 	font-family: 'Trocchi', serif;
-  font-size: 1.7rem;
   color: white;
+  z-index: 2;
+  font-size: 0.5rem;
 }
 
 .home-box {
