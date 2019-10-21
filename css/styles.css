@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body, html {
+  height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: gray;
+}
+
+body {
+  background: url(../images/wood.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, section, summary {
+    display:block;
+}
+
+nav {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+	padding: 0 2%;
+}
+nav li {
+  text-decoration: none;
+  display: inline;
+}
+
+ul {
+list-style-type: none;
+}
+
+.call-now {
+	background: green;
+	padding: 0.6% 0.1%;
+	border-radius: 15px;
+	text-align: center;
+
+}
+
+h1 {
+  font-family: 'Trocchi', serif;
+  font-size: 2rem;
+  text-align: center;
+	padding-bottom:2%;
+}
+
+h1 a {
+	color: white;
+}
+
+h2 {
+	font-family: 'Domine', serif;
+	text-align:center;
+	font-size: 1.3rem;
+	color: #B44125;
+	padding: 2%;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size:0.8rem;
+	color: white;
+}
+
+p {
+font-family: 'Open Sans', sans-serif;
+padding:3%;
+text-align: center;
+}
+
+header, footer {
+  background-color: #2B201B;
+  padding: 3%;
+}
+
+/* Main */
+
+figure {
+background-color: #2B201B;
+text-align: center;
+color: white;
+}
+
+figure img {
+max-width: 100%;
+opacity:0.75;
+}
+
+figcaption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: 'Trocchi', serif;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.home-box {
+	background: rgba(245, 243, 240, 0.80);
+	position: relative;
+	margin: 3% auto;
+	padding: 3%;
+	text-align: center;
+	max-width:800px;
+}
+
+main a {
+font-family: 'Domine', serif;
+margin: 2%;
+text-decoration: none;
+color: #B44125;
+}
+
+.catering {
+	column-count: 2;
+}
+
+.menu-item {
+font-family: 'Domine', serif;
+color: #B44125;
+padding-bottom:1.5%;
+}
+
+.menu-price {
+font-family: 'Open Sans', sans-serif;
+font-size: 0.8rem;
+padding-bottom: 5%;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+}
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Min-Width Media Queries */
+@media (min-width:400px){
+	figcaption {
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width:860px){
+	header {
+		height: 5%;
+	}
+
+	h1 {
+		float: left;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	p {
+	font-size: 1.2em;
+	}
+
+	nav {
+		text-align: right;
+	}
+
+	main li {
+		display: inline;
+	}
+
+	figcaption {
+		font-size: 3rem;
+	}
+
+	footer {
+		column-count: 3;
+	}
+
+	.catering {
+		column-count: 3;
+}
+/* Max-Width Media Queries */
+
+@media (max-width:400px){
+	nav {
+		display:block;
+	}
+	.catering {
+		column-count: 1;
+	}
+}
