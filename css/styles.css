@@ -19,7 +19,6 @@ body {
   background: url(../images/wood.jpg);
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, section, summary {
@@ -60,11 +59,10 @@ h1 a {
 }
 
 h2 {
-	font-family: 'Domine', serif;
+	font-family: 'Trocchi', serif;
 	text-align:center;
 	font-size: 1.3rem;
 	color: #B44125;
-	padding: 2%;
 }
 
 h3 {
@@ -75,7 +73,6 @@ h3 {
 
 p {
 font-family: 'Open Sans', sans-serif;
-padding:3%;
 text-align: center;
 }
 
@@ -140,35 +137,84 @@ figcaption {
 
 .home-box {
 	background: rgba(245, 243, 240, 0.80);
-	position: relative;
-	margin: 3% auto;
+	margin: 5%;
 	padding: 3%;
 	text-align: center;
-	max-width:800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
-main a {
+.home-box-buttons {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+main p {
+  padding-bottom: 2%;
+}
+
+main li{
 font-family: 'Domine', serif;
-margin: 2%;
+margin:  5%;
 text-decoration: none;
-color: #B44125;
+color: #303030;
 }
 
-.catering {
-	column-count: 2;
+main li a{
+color: #B44125;
+text-decoration: none;
+}
+
+/* Catering */
+
+.catering-trio {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.catering-box {
+  background: rgba(245, 243, 240, 0.80);
+  margin: 1.5%;
+  padding: 1.5%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.catering-box h2 {
+  text-align: left;
+  margin: 2% 0% 0% 4.8%;
+}
+
+.catering-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu-item {
 font-family: 'Domine', serif;
-color: #B44125;
-padding-bottom:1.5%;
+color: #303030;
+display: flex;
+justify-content: flex-start;
 }
 
 .menu-price {
 font-family: 'Open Sans', sans-serif;
 font-size: 0.8rem;
-padding-bottom: 5%;
+display: flex;
+justify-content: flex-end;
+text-align:left;
 }
+
+.catering-p {
+  margin-top: 3%;
+}
+
 
 /* Footer */
 footer {
@@ -188,6 +234,15 @@ footer a {
 	}
 }
 
+@media (min-width:550px) {
+  .home-box {
+    margin: 3%;
+}
+    main h2 {
+      padding-bottom: 1%;
+  }
+}
+
 @media (min-width:880px) {
 
   .navbar {
@@ -202,10 +257,31 @@ footer a {
   }
 
   .navlogo {
-    padding: 0%;
     display: flex;
     align-items: center;
+    padding-bottom: 0%;
   }
+
+  .home-trio {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+  }
+
+  .home-box {
+  max-width: 600px;
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .home-box-buttons {
+  display: flex;
+  align-items: center;
+  }
+
+}
 
 @media (min-width:860px){
 	header {
@@ -213,11 +289,11 @@ footer a {
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.2em;
 	}
 
 	p {
-	font-size: 1.2em;
+	font-size: 0.9em;
 	}
 
 	figcaption {
@@ -228,8 +304,6 @@ footer a {
 		column-count: 3;
 	}
 
-	.catering {
-		column-count: 3;
 }
 /* Max-Width Media Queries */
 
