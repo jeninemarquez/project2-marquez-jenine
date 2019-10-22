@@ -491,12 +491,16 @@ footer a {
     align-items: flex-start;
   }
 
+  .catering-row li {
+    font-size: 1.1rem;
+  }
+
   .catering-row p {
     font-size: 0.9rem;
   }
 
   .panel h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
 @media (min-width:700px) {
